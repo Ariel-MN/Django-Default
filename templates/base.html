@@ -1,0 +1,47 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
+
+    <!-- FontAwesome JS -->
+    <script defer src="{% static 'fontawesome/js/all.js' %}"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{% static 'css/theme.css' %}" />
+
+    {% block extracss %}
+    {% endblock extracss %}
+    
+    <title>{% block title %}{% endblock title %} | Title</title>
+
+  </head>
+  <body>
+    <header class="row align-items-center">
+        <ul class="list-inline my-3">
+            <li class="nav-item">
+            {% block home %}
+                <a class="nav-link" href="/"><i class="fas fa-building fa-fw mr-2"></i>Home</a>
+            {% endblock home %}
+            </li>          
+        </ul>
+    </header>
+
+    {% block content %}
+    {% endblock content %}
+
+    {% block extrajs %}
+    {% endblock extrajs %}
+
+  </body>
+</html>
