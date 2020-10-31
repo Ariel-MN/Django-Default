@@ -142,10 +142,10 @@ LOGOUT_REDIRECT_URL = '/'
 """
 EMAIL_HOST_USER = conf['EMAIL_HOST_USER']
 EMAIL_HOST_PASSWORD = conf['EMAIL_HOST_PASSWORD']
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_BACKEND = conf['EMAIL_BACKEND']
+EMAIL_HOST = conf['EMAIL_HOST']
+EMAIL_PORT = conf['EMAIL_PORT']
+EMAIL_USE_TLS = conf['EMAIL_USE_TLS']
 """
 
 # ReCaptcha config
