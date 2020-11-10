@@ -2,18 +2,7 @@
 # UPGRADE PIP: $ python -m pip install --upgrade pip
 
 
-# INSTALL LIBRARIES:
+# INSTALL DEPENDENCIES:
 # How to install: $ pip install -r /path/to/requirements.txt
 
 Django==3.0.8
-
-# By installing the above, the following is automatically installed.
-
-asgiref==3.2.10
-certifi==2020.6.20
-chardet==3.0.4
-django-js-asset==1.2.2
-idna==2.10
-pytz==2020.1
-sqlparse==0.3.1
-urllib3==1.25.9
