@@ -1,6 +1,6 @@
 __pycache__
 db.sqlite3
-venv
+.venv
 
 #keygen.py
 #.conf

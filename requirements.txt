@@ -3,7 +3,7 @@
 
 
 # INSTALL LIBRARIES:
-# How to install: & pip install -r /path/to/requirements.txt
+# How to install: $ pip install -r /path/to/requirements.txt
 
 Django==3.0.8
 
